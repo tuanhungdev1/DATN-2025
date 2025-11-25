@@ -1,0 +1,25 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "submitButton": "Login",
+      "submitting": "Logging in...",
+      "success": "Login successful!",
+      "error": "Login failed",
+      "forgotPassword": "Forgot password?"
+    }
+  },
+  "header": {
+    "selectLanguage": "Select your language",
+    "help": "Help",
+    "menu": "Menu",
+    "helpAndSupport": "Help and support"
+  }
+}

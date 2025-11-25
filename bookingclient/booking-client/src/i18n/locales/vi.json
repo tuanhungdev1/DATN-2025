@@ -1,0 +1,25 @@
+{
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Có lỗi xảy ra",
+    "success": "Thành công"
+  },
+  "auth": {
+    "login": {
+      "title": "Đăng nhập",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "submitButton": "Đăng nhập",
+      "submitting": "Đang đăng nhập...",
+      "success": "Đăng nhập thành công!",
+      "error": "Đăng nhập thất bại",
+      "forgotPassword": "Quên mật khẩu?"
+    }
+  },
+  "header": {
+    "selectLanguage": "Chọn ngôn ngữ",
+    "help": "Trợ giúp",
+    "menu": "Menu",
+    "helpAndSupport": "Trợ giúp và hỗ trợ"
+  }
+}

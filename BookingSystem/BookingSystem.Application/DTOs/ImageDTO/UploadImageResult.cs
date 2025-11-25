@@ -1,0 +1,9 @@
+﻿namespace BookingSystem.Application.DTOs.ImageDTO
+{
+    public class UploadImageResult<T>
+    {
+		public bool Success { get; set; }
+		public string? ErrorMessage { get; set; }
+		public T? Data { get; set; }
+	}
+}
