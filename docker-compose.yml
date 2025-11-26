@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: my_sqlserver
+    environment:
+      SA_PASSWORD: "Password123@"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+      MSSQL_FORCE_ENCRYPTION: "0"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./backup:/var/opt/mssql/backup
+    command: >
+      /bin/bash -c "/opt/mssql/bin/mssql-conf set network.tlscert /var/opt/mssql/certs/mssql.pem && 
+                    /opt/mssql/bin/mssql-conf set network.forceencryption 0 && 
+                    /opt/mssql/bin/sqlservr"
+    restart: unless-stopped
